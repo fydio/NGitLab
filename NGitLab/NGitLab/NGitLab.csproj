@@ -53,6 +53,7 @@
     <Compile Include="Impl\IssueClient.cs" />
     <Compile Include="Impl\MergeRequestClient.cs" />
     <Compile Include="Impl\MergeRequestCommentClient.cs" />
+    <Compile Include="Impl\MemberClient.cs" />
     <Compile Include="Impl\ProjectHooksClient.cs" />
     <Compile Include="Impl\FileClient.cs" />
     <Compile Include="Impl\HttpRequestor.cs" />
@@ -76,7 +77,10 @@
     <Compile Include="Models\FileData.cs" />
     <Compile Include="Models\FileDelete.cs" />
     <Compile Include="Models\FileUpsert.cs" />
+    <Compile Include="Models\IMemberClient.cs" />
     <Compile Include="Models\Issue.cs" />
+    <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\MemberUpsert.cs" />
     <Compile Include="Models\MergeCommitMessage.cs" />
     <Compile Include="Models\MergeRequest.cs" />
     <Compile Include="Models\MergeRequestComment.cs" />

@@ -1,4 +1,6 @@
 ﻿using NGitLab.Impl;
+using System.Text.RegularExpressions;
+using NGitLab.Models;
 
 namespace NGitLab
 {
@@ -24,6 +26,16 @@ namespace NGitLab
         public readonly IProjectClient Projects;
         public readonly IIssueClient Issues;
         public readonly INamespaceClient Groups;
+
+        public IMemberClient Members(int groupId)
+        {
+            return new MemberClient(_api, groupId);
+        }
+
+        public IMemberClient Members(Group group)
+        {
+            return Members(group.Index);
+        }
 
         public IRepositoryClient GetRepository(int projectId)
         {
